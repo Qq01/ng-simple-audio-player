@@ -1,0 +1,5 @@
+
+<div (click)="selected()" style="width:30px;display:inline-block;" ><i class="material-icons" ngShow="file.isCurrent | async" >{{(file.isPlaying | async) ? 'play_arrow' : 'pause'}}</i></div>
+<div (click)="selected()" style="width:calc(100% - 100px);display:inline-block;" id="filename" class="w3-btn buffering" >{{name}}</div>
+
+<div (click)="remove()" class="w3-btn" ><i class="material-icons w3-text-light-grey" >clear</i></div>    

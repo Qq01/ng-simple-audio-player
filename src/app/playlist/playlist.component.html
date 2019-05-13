@@ -1,0 +1,7 @@
+<label class="w3-btn w3-block w3-flat-wet-asphalt" >
+  Add music
+  <input (change)="onFileChange($event)" type="file" accept="audio/*" style="display:none" multiple >
+</label>
+<ul class="w3-ul" >
+  <qq-audio-file *ngFor="let audioFile of audioFiles | async" [audioFile]="audioFile" ></qq-audio-file>
+</ul>
